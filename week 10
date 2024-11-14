@@ -1,0 +1,285 @@
+class Pet:
+    def __init__(self, name, animal_type, age):
+        self.__name = name
+        self.__animal_type = animal_type
+        self.__age = age
+    def set_name(self, name):
+        self.__name = name
+    def set_animal_type(self, animal_type):
+        self.__animal_type = animal_type
+    def set_age(self, age):
+        self.__age = age
+    def get_name(self):
+        return self.__name
+    def get_animal_type(self):
+        return self.__animal_type
+    def get_age(self):
+        return self.__age
+def main():
+    name = input("Enter the name of your pet: ")
+    animal_type = input("Enter the type of animal (e.g., Dog, Cat, Bird): ")
+    age = input("Enter the age of your pet: ")
+    my_pet = Pet(name, animal_type, age)
+    print("\nHere are the details of your pet:")
+    print("Name:", my_pet.get_name())
+    print("Animal Type:", my_pet.get_animal_type())
+    print("Age:", my_pet.get_age())
+if __name__ == "__main__":
+    main()
+
+
+
+
+class Car:
+    def __init__(self, year_model, make):
+        self.__year_model = year_model
+        self.__make = make
+        self.__speed = 0
+    def accelerate(self):
+        self.__speed += 5
+    def brake(self):
+        self.__speed -= 5
+    def get_speed(self):
+        return self.__speed
+def main():
+    my_car = Car(2020, "Toyota")
+    for _ in range(5):
+        my_car.accelerate()
+        print("Current speed after accelerating:", my_car.get_speed())
+    for _ in range(5):
+        my_car.brake()
+        print("Current speed after braking:", my_car.get_speed())
+if __name__ == "__main__":
+    main()
+
+
+
+class PersonalData:
+    def __init__(self, name, address, age, phone_number):
+        self.__name = name
+        self.__address = address
+        self.__age = age
+        self.__phone_number = phone_number
+    def get_name(self):
+        return self.__name
+    def get_address(self):
+        return self.__address
+    def get_age(self):
+        return self.__age
+    def get_phone_number(self):
+        return self.__phone_number
+    def set_name(self, name):
+        self.__name = name
+    def set_address(self, address):
+        self.__address = address
+    def set_age(self, age):
+        self.__age = age
+    def set_phone_number(self, phone_number):
+        self.__phone_number = phone_number
+def main():
+    person1 = PersonalData("John Doe", "123 Elm Street, Springfield", 30, "555-1234")
+    person2 = PersonalData("Jane Smith", "456 Oak Avenue, Metropolis", 25, "555-5678")
+    person3 = PersonalData("Alice Johnson", "789 Pine Road, Gotham", 28, "555-9012")
+    print("Person 1:")
+    print("Name:", person1.get_name())
+    print("Address:", person1.get_address())
+    print("Age:", person1.get_age())
+    print("Phone Number:", person1.get_phone_number())
+    print()
+    print("Person 2:")
+    print("Name:", person2.get_name())
+    print("Address:", person2.get_address())
+    print("Age:", person2.get_age())
+    print("Phone Number:", person2.get_phone_number())
+    print()
+    print("Person 3:")
+    print("Name:", person3.get_name())
+    print("Address:", person3.get_address())
+    print("Age:", person3.get_age())
+    print("Phone Number:", person3.get_phone_number())
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+class Employee:
+    def __init__(self, name, id_number, department, job_title):
+        self.__name = name
+        self.__id_number = id_number
+        self.__department = department
+        self.__job_title = job_title
+    def get_name(self):
+        return self.__name
+    def get_id_number(self):
+        return self.__id_number
+    def get_department(self):
+        return self.__department
+    def get_job_title(self):
+        return self.__job_title
+    def set_name(self, name):
+        self.__name = name
+    def set_id_number(self, id_number):
+        self.__id_number = id_number
+    def set_department(self, department):
+        self.__department = department
+    def set_job_title(self, job_title):
+        self.__job_title = job_title
+def main():
+    employee1 = Employee("Susan Meyers", 47899, "Accounting", "Vice President")
+    employee2 = Employee("Mark Jones", 39119, "IT", "Programmer")
+    employee3 = Employee("Joy Rogers", 81774, "Manufacturing", "Engineer")
+    print("Employee 1:")
+    print("Name:", employee1.get_name())
+    print("ID Number:", employee1.get_id_number())
+    print("Department:", employee1.get_department())
+    print("Job Title:", employee1.get_job_title())
+    print()
+    print("Employee 2:")
+    print("Name:", employee2.get_name())
+    print("ID Number:", employee2.get_id_number())
+    print("Department:", employee2.get_department())
+    print("Job Title:", employee2.get_job_title())
+    print()
+    print("Employee 3:")
+    print("Name:", employee3.get_name())
+    print("ID Number:", employee3.get_id_number())
+    print("Department:", employee3.get_department())
+    print("Job Title:", employee3.get
+
+
+
+
+
+
+class RetailItem:
+    def __init__(self, description, units, price):
+        self.__description = description
+        self.__units = units
+        self.__price = price
+    def get_description(self):
+        return self.__description
+    def get_units(self):
+        return self.__units
+    def get_price(self):
+        return self.__price
+    def set_description(self, description):
+        self.__description = description
+    def set_units(self, units):
+        self.__units = units
+    def set_price(self, price):
+        self.__price = price
+def main():
+    item1 = RetailItem("Jacket", 12, 59.95)
+    item2 = RetailItem("Designer Jeans", 40, 34.95)
+    item3 = RetailItem("Shirt", 20, 24.95)
+    print("Item 1:")
+    print("Description:", item1.get_description())
+    print("Units in Inventory:", item1.get_units())
+    print("Price:", item1.get_price())
+    print()
+    print("Item 2:")
+    print("Description:", item2.get_description())
+    print("Units in Inventory:", item2.get_units())
+    print("Price:", item2.get_price())
+    print()
+    print("Item 3:")
+    print("Description:", item3.get_description())
+    print("Units in Inventory:", item3.get_units())
+    print("Price:", item3.get_price())
+if __name__ == "__main__":
+    main()
+
+
+
+class Patient:
+    def __init__(self, first_name, middle_name, last_name, address, city, state, zip_code, phone_number, emergency_contact_name, emergency_contact_phone):
+        self.__first_name = first_name
+        self.__middle_name = middle_name
+        self.__last_name = last_name
+        self.__address = address
+        self.__city = city
+        self.__state = state
+        self.__zip_code = zip_code
+        self.__phone_number = phone_number
+        self.__emergency_contact_name = emergency_contact_name
+        self.__emergency_contact_phone = emergency_contact_phone
+    def get_first_name(self):
+        return self.__first_name
+    def get_middle_name(self):
+        return self.__middle_name
+    def get_last_name(self):
+        return self.__last_name
+    def get_address(self):
+        return self.__address
+    def get_city(self):
+        return self.__city
+    def get_state(self):
+        return self.__state
+    def get_zip_code(self):
+        return self.__zip_code
+    def get_phone_number(self):
+        return self.__phone_number
+    def get_emergency_contact_name(self):
+        return self.__emergency_contact_name
+    def get_emergency_contact_phone(self):
+        return self.__emergency_contact_phone
+    def set_first_name(self, first_name):
+        self.__first_name = first_name
+    def set_middle_name(self, middle_name):
+        self.__middle_name = middle_name
+    def set_last_name(self, last_name):
+        self.__last_name = last_name
+    def set_address(self, address):
+        self.__address = address
+    def set_city(self, city):
+        self.__city = city
+    def set_state(self, state):
+        self.__state = state
+    def set_zip_code(self, zip_code):
+        self.__zip_code = zip_code
+    def set_phone_number(self, phone_number):
+        self.__phone_number = phone_number
+    def set_emergency_contact_name(self, emergency_contact_name):
+        self.__emergency_contact_name = emergency_contact_name
+    def set_emergency_contact_phone(self, emergency_contact_phone):
+        self.__emergency_contact_phone = emergency_contact_phone
+class Procedure:
+    def __init__(self, procedure_name, date, practitioner, charges):
+        self.__procedure_name = procedure_name
+        self.__date = date
+        self.__practitioner = practitioner
+        self.__charges = charges
+    def get_procedure_name(self):
+        return self.__procedure_name
+    def get_date(self):
+        return self.__date
+    def get_practitioner(self):
+        return self.__practitioner
+    def get_charges(self):
+        return self.__charges
+    def set_procedure_name(self, procedure_name):
+        self.__procedure_name = procedure_name
+    def set_date(self, date):
+        self.__date = date
+    def set_practitioner(self, practitioner):
+        self.__practitioner = practitioner
+    def set_charges(self, charges):
+        self.__charges = charges
+def main():
+    patient = Patient("John", "A.", "Doe", "123 Main St", "Anytown", "CA", "12345", "555-1234", "Jane Doe", "555-5678")
+    procedure1 = Procedure("Physical Exam", "2024-11-13", "Dr. Irvine", 250.00)
+    procedure2 = Procedure("X-ray", "2024-11-13", "Dr. Jamison", 500.00)
+    procedure
+
+
+
+
+
+
+
+
+
+
+
